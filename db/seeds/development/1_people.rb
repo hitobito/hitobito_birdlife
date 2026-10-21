@@ -41,5 +41,5 @@ seeder.seed_all_roles
 
 root = Group.root
 devs.each do |name, email|
-  seeder.seed_developer(name, email, root, Group::BirdLifeSchweizGeneralSekretariat::Support)
+  seeder.seed_developer(name, email, root, Group::BirdLifeSchweizGeneralsekretariat::Support)
 end
