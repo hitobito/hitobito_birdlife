@@ -3,17 +3,552 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_birdlife.
 
-
+---
 root:
   parent:
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
   lft: 1
-  rgt: 2
-  name: Hauptgruppe
+  rgt: 148
+  name: BirdLife Schweiz/Suisse/Svizzera
   type: Group::BirdLifeSchweiz
-  email: root@example.net
-  zip_code: 2843
-  town: Neu Carlscheid
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:root) %>
-
-# TODO add more groups
-# you could generate a good setup manually and dump it with rake fixtures:groups
+  email: lyndon@hitobito.example.com
+  street: Schellingstr.
+  housenumber: '8'
+  zip_code: '4692'
+  town: Charleenhagen
+geschaeftsleitung:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 36
+  rgt: 37
+  name: Geschäftsleitung
+  type: Group::BirdLifeSchweizGeschaeftsleitung
+  email: rupert_shanahan@hitobito.example.com
+  street: Lingenfeld
+  housenumber: 96b
+  zip_code: '3819'
+  town: Neu Marius
+vorstand_3:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 130
+  rgt: 131
+  name: Vorstand
+  type: Group::BirdLifeSchweizVorstand
+  email: noma.grant@hitobito.example.com
+  street: Forellental
+  housenumber: 89b
+  zip_code: '8086'
+  town: Presslerhagen
+generalsekretariat:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 34
+  rgt: 35
+  name: Generalsekretariat
+  type: Group::BirdLifeSchweizGeneralsekretariat
+  email: janeth_larkin@hitobito.example.com
+  street: Im Bühl
+  housenumber: 78c
+  zip_code: '9926'
+  town: Moormannscheid
+projektgruppe:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 96
+  rgt: 97
+  name: Projektgruppe
+  type: Group::BirdLifeSchweizProjektgruppe
+  email: franklin@hitobito.example.com
+  street: Lärchenweg
+  housenumber: 92a
+  zip_code: '5784'
+  town: Richardfeld
+interessenten:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 62
+  rgt: 63
+  name: Interessenten
+  type: Group::BirdLifeSchweizInteressenten
+  email: raymundo@hitobito.example.com
+  street: Annette-Kolb-Str.
+  housenumber: '674'
+  zip_code: '1550'
+  town: Bükerberg
+aargau:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:aargau)%>"
+  lft: 2
+  rgt: 9
+  name: Aargau
+  type: Group::Kantonalverband
+vorstand_8:
+  parent: aargau
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:aargau)%>"
+  lft: 7
+  rgt: 8
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_9:
+  parent: aargau
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:aargau)%>"
+  lft: 3
+  rgt: 4
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_10:
+  parent: aargau
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:aargau)%>"
+  lft: 5
+  rgt: 6
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+appenzeller_vogelschutz:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:appenzeller_vogelschutz)%>"
+  lft: 10
+  rgt: 17
+  name: Appenzeller Vogelschutz
+  type: Group::Kantonalverband
+vorstand_12:
+  parent: appenzeller_vogelschutz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:appenzeller_vogelschutz)%>"
+  lft: 15
+  rgt: 16
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_13:
+  parent: appenzeller_vogelschutz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:appenzeller_vogelschutz)%>"
+  lft: 11
+  rgt: 12
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_14:
+  parent: appenzeller_vogelschutz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:appenzeller_vogelschutz)%>"
+  lft: 13
+  rgt: 14
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+baselland:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:baselland)%>"
+  lft: 18
+  rgt: 25
+  name: Baselland
+  type: Group::Kantonalverband
+vorstand_16:
+  parent: baselland
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:baselland)%>"
+  lft: 23
+  rgt: 24
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_17:
+  parent: baselland
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:baselland)%>"
+  lft: 19
+  rgt: 20
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_18:
+  parent: baselland
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:baselland)%>"
+  lft: 21
+  rgt: 22
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+ornithologische_gesellschaft_basel:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ornithologische_gesellschaft_basel)%>"
+  lft: 88
+  rgt: 95
+  name: Ornithologische Gesellschaft Basel
+  type: Group::Kantonalverband
+vorstand_20:
+  parent: ornithologische_gesellschaft_basel
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ornithologische_gesellschaft_basel)%>"
+  lft: 93
+  rgt: 94
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_21:
+  parent: ornithologische_gesellschaft_basel
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ornithologische_gesellschaft_basel)%>"
+  lft: 89
+  rgt: 90
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_22:
+  parent: ornithologische_gesellschaft_basel
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ornithologische_gesellschaft_basel)%>"
+  lft: 91
+  rgt: 92
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+bern:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bern)%>"
+  lft: 26
+  rgt: 33
+  name: Bern
+  type: Group::Kantonalverband
+vorstand_24:
+  parent: bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bern)%>"
+  lft: 31
+  rgt: 32
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_25:
+  parent: bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bern)%>"
+  lft: 27
+  rgt: 28
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_26:
+  parent: bern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:bern)%>"
+  lft: 29
+  rgt: 30
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+graubuenden:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:graubuenden)%>"
+  lft: 46
+  rgt: 53
+  name: Graubünden
+  type: Group::Kantonalverband
+vorstand_28:
+  parent: graubuenden
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:graubuenden)%>"
+  lft: 51
+  rgt: 52
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_29:
+  parent: graubuenden
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:graubuenden)%>"
+  lft: 47
+  rgt: 48
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_30:
+  parent: graubuenden
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:graubuenden)%>"
+  lft: 49
+  rgt: 50
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+groupe_ornithologique_du_bassin_genevois:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:groupe_ornithologique_du_bassin_genevois)%>"
+  lft: 54
+  rgt: 61
+  name: Groupe Ornithologique du Bassin Genevois
+  type: Group::Kantonalverband
+vorstand_32:
+  parent: groupe_ornithologique_du_bassin_genevois
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:groupe_ornithologique_du_bassin_genevois)%>"
+  lft: 59
+  rgt: 60
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_33:
+  parent: groupe_ornithologique_du_bassin_genevois
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:groupe_ornithologique_du_bassin_genevois)%>"
+  lft: 55
+  rgt: 56
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_34:
+  parent: groupe_ornithologique_du_bassin_genevois
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:groupe_ornithologique_du_bassin_genevois)%>"
+  lft: 57
+  rgt: 58
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+glarnerland:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:glarnerland)%>"
+  lft: 38
+  rgt: 45
+  name: Glarnerland
+  type: Group::Kantonalverband
+vorstand_36:
+  parent: glarnerland
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:glarnerland)%>"
+  lft: 43
+  rgt: 44
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_37:
+  parent: glarnerland
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:glarnerland)%>"
+  lft: 39
+  rgt: 40
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_38:
+  parent: glarnerland
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:glarnerland)%>"
+  lft: 41
+  rgt: 42
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+luzern:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:luzern)%>"
+  lft: 72
+  rgt: 79
+  name: Luzern
+  type: Group::Kantonalverband
+vorstand_40:
+  parent: luzern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:luzern)%>"
+  lft: 77
+  rgt: 78
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_41:
+  parent: luzern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:luzern)%>"
+  lft: 73
+  rgt: 74
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_42:
+  parent: luzern
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:luzern)%>"
+  lft: 75
+  rgt: 76
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+st_gallen:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:st_gallen)%>"
+  lft: 114
+  rgt: 121
+  name: St. Gallen
+  type: Group::Kantonalverband
+vorstand_44:
+  parent: st_gallen
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:st_gallen)%>"
+  lft: 119
+  rgt: 120
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_45:
+  parent: st_gallen
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:st_gallen)%>"
+  lft: 115
+  rgt: 116
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_46:
+  parent: st_gallen
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:st_gallen)%>"
+  lft: 117
+  rgt: 118
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+schwyz:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:schwyz)%>"
+  lft: 98
+  rgt: 105
+  name: Schwyz
+  type: Group::Kantonalverband
+vorstand_48:
+  parent: schwyz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:schwyz)%>"
+  lft: 103
+  rgt: 104
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_49:
+  parent: schwyz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:schwyz)%>"
+  lft: 99
+  rgt: 100
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_50:
+  parent: schwyz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:schwyz)%>"
+  lft: 101
+  rgt: 102
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+solothurn:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:solothurn)%>"
+  lft: 106
+  rgt: 113
+  name: Solothurn
+  type: Group::Kantonalverband
+vorstand_52:
+  parent: solothurn
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:solothurn)%>"
+  lft: 111
+  rgt: 112
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_53:
+  parent: solothurn
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:solothurn)%>"
+  lft: 107
+  rgt: 108
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_54:
+  parent: solothurn
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:solothurn)%>"
+  lft: 109
+  rgt: 110
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+thurgau:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:thurgau)%>"
+  lft: 122
+  rgt: 129
+  name: Thurgau
+  type: Group::Kantonalverband
+vorstand_56:
+  parent: thurgau
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:thurgau)%>"
+  lft: 127
+  rgt: 128
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_57:
+  parent: thurgau
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:thurgau)%>"
+  lft: 123
+  rgt: 124
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_58:
+  parent: thurgau
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:thurgau)%>"
+  lft: 125
+  rgt: 126
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+oberwallis:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:oberwallis)%>"
+  lft: 80
+  rgt: 87
+  name: Oberwallis
+  type: Group::Kantonalverband
+vorstand_60:
+  parent: oberwallis
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:oberwallis)%>"
+  lft: 85
+  rgt: 86
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_61:
+  parent: oberwallis
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:oberwallis)%>"
+  lft: 81
+  rgt: 82
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_62:
+  parent: oberwallis
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:oberwallis)%>"
+  lft: 83
+  rgt: 84
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+zuger_vogelschutz:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuger_vogelschutz)%>"
+  lft: 132
+  rgt: 139
+  name: Zuger Vogelschutz
+  type: Group::Kantonalverband
+vorstand_64:
+  parent: zuger_vogelschutz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuger_vogelschutz)%>"
+  lft: 137
+  rgt: 138
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_65:
+  parent: zuger_vogelschutz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuger_vogelschutz)%>"
+  lft: 133
+  rgt: 134
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_66:
+  parent: zuger_vogelschutz
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuger_vogelschutz)%>"
+  lft: 135
+  rgt: 136
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+zuerich:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuerich)%>"
+  lft: 140
+  rgt: 147
+  name: Zürich
+  type: Group::Kantonalverband
+vorstand_68:
+  parent: zuerich
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuerich)%>"
+  lft: 145
+  rgt: 146
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_69:
+  parent: zuerich
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuerich)%>"
+  lft: 141
+  rgt: 142
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_70:
+  parent: zuerich
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:zuerich)%>"
+  lft: 143
+  rgt: 144
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
+liechtensteinischer_ornithologischer_landesverband:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:liechtensteinischer_ornithologischer_landesverband)%>"
+  lft: 64
+  rgt: 71
+  name: Liechtensteinischer Ornithologischer Landesverband
+  type: Group::Kantonalverband
+vorstand_72:
+  parent: liechtensteinischer_ornithologischer_landesverband
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:liechtensteinischer_ornithologischer_landesverband)%>"
+  lft: 69
+  rgt: 70
+  name: Vorstand
+  type: Group::KantonalverbandVorstand
+geschaeftsstelle_73:
+  parent: liechtensteinischer_ornithologischer_landesverband
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:liechtensteinischer_ornithologischer_landesverband)%>"
+  lft: 65
+  rgt: 66
+  name: Geschäftsstelle
+  type: Group::KantonalverbandGeschaeftsstelle
+gruppe_74:
+  parent: liechtensteinischer_ornithologischer_landesverband
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:liechtensteinischer_ornithologischer_landesverband)%>"
+  lft: 67
+  rgt: 68
+  name: Gruppe
+  type: Group::KantonalverbandGruppe
