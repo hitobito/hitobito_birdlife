@@ -1,25 +1,257 @@
-#  Copyright (c) 2012-2026, BirdLife Schweiz/Suisse/Svizzera. This file is part of
-#  hitobito_birdlife and licensed under the Affero General Public License version 3
-#  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_birdlife.
-
-
 de:
   activerecord:
     models:
 
       ### GROUPS
 
-      group/root:
-        one: Hauptgruppe
-        other: Hauptgruppen
+      group/bird_life_schweiz:
+        one: BirdLife Schweiz
+        other: TODO
+
+      group/bird_life_schweiz_geschaeftsleitung:
+        one: BirdLife Schweiz Geschäftsleitung
+        other: TODO
+
+      group/bird_life_schweiz_vorstand:
+        one: BirdLife Schweiz Vorstand
+        other: TODO
+
+      group/bird_life_schweiz_generalsekretariat:
+        one: BirdLife Schweiz Generalsekretariat
+        other: TODO
+
+      group/bird_life_schweiz_projektgruppe:
+        one: BirdLife Schweiz Projektgruppe
+        other: TODO
+
+      group/bird_life_schweiz_interessenten:
+        one: BirdLife Schweiz Interessenten
+        other: TODO
+
+      group/kantonalverband:
+        one: Kantonalverband
+        other: TODO
+
+      group/kantonalverband_vorstand:
+        one: Kantonalverband Vorstand
+        other: TODO
+
+      group/kantonalverband_geschaeftsstelle:
+        one: Kantonalverband Geschäftsstelle
+        other: TODO
+
+      group/kantonalverband_gruppe:
+        one: Kantonalverband Gruppe
+        other: TODO
+
+      group/lokale_sektion:
+        one: Lokale Sektion
+        other: TODO
+
+      group/lokale_sektion_vorstand:
+        one: Lokale Sektion Vorstand
+        other: TODO
+
+      group/lokale_sektion_geschaeftsstelle:
+        one: Lokale Sektion Geschäftsstelle
+        other: TODO
+
+      group/lokale_sektion_gruppe:
+        one: Lokale Sektion Gruppe
+        other: TODO
 
 
       ### ROLES
 
-      group/root/leader:
-        one: Leitung
-        description: Leitungspersonen verwalten die Applikation.
-      group/root/member:
+      group/bird_life_schweiz_geschaeftsleitung/geschaeftsfuehrung:
+        one: Geschäftsführung
+        description: TODO
+
+      group/bird_life_schweiz_geschaeftsleitung/stv_geschaeftsfuehrung:
+        one: Stv. Geschäftsführung
+        description: TODO
+
+      group/bird_life_schweiz_vorstand/praesident:
+        one: Präsident
+        description: TODO
+
+      group/bird_life_schweiz_vorstand/vizepraesident:
+        one: Vizepräsident
+        description: TODO
+
+      group/bird_life_schweiz_vorstand/vorstandsmitglied:
+        one: Vorstandsmitglied
+        description: TODO
+
+      group/bird_life_schweiz_vorstand/finanzen:
+        one: Finanzen
+        description: TODO
+
+      group/bird_life_schweiz_vorstand/leserechte:
+        one: Leserechte
+        description: TODO
+
+      group/bird_life_schweiz_vorstand/schreibrechte:
+        one: Schreibrechte
+        description: TODO
+
+      group/bird_life_schweiz_generalsekretariat/redaktor:
+        one: Redaktor
+        description: TODO
+
+      group/bird_life_schweiz_generalsekretariat/wissenschaftliche_mitarbeitende:
+        one: Wissenschaftliche Mitarbeitende
+        description: TODO
+
+      group/bird_life_schweiz_generalsekretariat/support:
+        one: Support
+        description: TODO
+
+      group/bird_life_schweiz_generalsekretariat/buchhaltung:
+        one: Buchhaltung
+        description: TODO
+
+      group/bird_life_schweiz_generalsekretariat/sekretariat:
+        one: Sekretariat
+        description: TODO
+
+      group/bird_life_schweiz_projektgruppe/projektleitende:
+        one: Projektleitende
+        description: TODO
+
+      group/bird_life_schweiz_projektgruppe/projektmitarbeitende:
+        one: Projektmitarbeitende
+        description: TODO
+
+      group/bird_life_schweiz_projektgruppe/projektverantwortliche:
+        one: Projektverantwortliche
+        description: TODO
+
+      group/bird_life_schweiz_projektgruppe/mitglied:
         one: Mitglied
-        description: Mitglieder sind alle anderen.
+        description: TODO
+
+      group/bird_life_schweiz_interessenten/kontakt:
+        one: Kontakt
+        description: TODO
+
+      group/kantonalverband_vorstand/praesident:
+        one: Präsident
+        description: TODO
+
+      group/kantonalverband_vorstand/vizepraesident:
+        one: Vizepräsident
+        description: TODO
+
+      group/kantonalverband_vorstand/vorstandsmitglied:
+        one: Vorstandsmitglied
+        description: TODO
+
+      group/kantonalverband_vorstand/finanzen:
+        one: Finanzen
+        description: TODO
+
+      group/kantonalverband_vorstand/beisitzende:
+        one: Beisitzende
+        description: TODO
+
+      group/kantonalverband_vorstand/webmaster:
+        one: Webmaster
+        description: TODO
+
+      group/kantonalverband_vorstand/sekretariat:
+        one: Sekretariat
+        description: TODO
+
+      group/kantonalverband_vorstand/leserechte:
+        one: Leserechte
+        description: TODO
+
+      group/kantonalverband_vorstand/schreibrechte:
+        one: Schreibrechte
+        description: TODO
+
+      group/kantonalverband_geschaeftsstelle/schreibrechte:
+        one: Schreibrechte
+        description: TODO
+
+      group/kantonalverband_geschaeftsstelle/geschaeftsfuehrung:
+        one: Geschäftsführung
+        description: TODO
+
+      group/kantonalverband_geschaeftsstelle/stv_geschaeftsfuehrung:
+        one: Stv. Geschäftsführung
+        description: TODO
+
+      group/kantonalverband_gruppe/mitglied:
+        one: Mitglied
+        description: TODO
+
+      group/kantonalverband_gruppe/nicht_mitglied:
+        one: NichtMitglied
+        description: TODO
+
+      group/kantonalverband_gruppe/read_only:
+        one: ReadOnly
+        description: TODO
+
+      group/lokale_sektion_vorstand/praesident:
+        one: Präsident
+        description: TODO
+
+      group/lokale_sektion_vorstand/vizepraesident:
+        one: Vizepräsident
+        description: TODO
+
+      group/lokale_sektion_vorstand/vorstandsmitglied:
+        one: Vorstandsmitglied
+        description: TODO
+
+      group/lokale_sektion_vorstand/finanzen:
+        one: Finanzen
+        description: TODO
+
+      group/lokale_sektion_vorstand/beisitzende:
+        one: Beisitzende
+        description: TODO
+
+      group/lokale_sektion_vorstand/webmaster:
+        one: Webmaster
+        description: TODO
+
+      group/lokale_sektion_vorstand/sekretariat:
+        one: Sekretariat
+        description: TODO
+
+      group/lokale_sektion_vorstand/leserechte:
+        one: Leserechte
+        description: TODO
+
+      group/lokale_sektion_vorstand/schreibrechte:
+        one: Schreibrechte
+        description: TODO
+
+      group/lokale_sektion_geschaeftsstelle/schreibrechte:
+        one: Schreibrechte
+        description: TODO
+
+      group/lokale_sektion_geschaeftsstelle/geschaeftsfuehrung:
+        one: Geschäftsführung
+        description: TODO
+
+      group/lokale_sektion_geschaeftsstelle/stv_geschaeftsfuehrung:
+        one: Stv. Geschäftsführung
+        description: TODO
+
+      group/lokale_sektion_gruppe/mitglied:
+        one: Mitglied
+        description: TODO
+
+      group/lokale_sektion_gruppe/nicht_mitglied:
+        one: NichtMitglied
+        description: TODO
+
+      group/lokale_sektion_gruppe/read_only:
+        one: ReadOnly
+        description: TODO
+

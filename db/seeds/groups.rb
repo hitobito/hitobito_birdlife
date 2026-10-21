@@ -5,5 +5,4 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_birdlife.
 
-
-Group::Root.seed_once(:parent_id, name: "Hauptgruppe")
+Group::BirdLifeSchweiz.seed_once(:parent_id, name: "BirdLife Schweiz/Suisse/Svizzera")
