@@ -41,7 +41,7 @@ de:
         other: TODO
 
       group/kantonalverband_gruppe:
-        one: Gruppe
+        one: Mitglieder
         other: TODO
 
       group/lokale_sektion:
@@ -57,7 +57,7 @@ de:
         other: TODO
 
       group/lokale_sektion_gruppe:
-        one: Gruppe
+        one: Mitglieder
         other: TODO
 
 
