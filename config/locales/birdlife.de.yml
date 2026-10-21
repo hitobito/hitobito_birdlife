@@ -9,23 +9,23 @@ de:
         other: TODO
 
       group/bird_life_schweiz_geschaeftsleitung:
-        one: BirdLife Schweiz Geschäftsleitung
+        one: Geschäftsleitung
         other: TODO
 
       group/bird_life_schweiz_vorstand:
-        one: BirdLife Schweiz Vorstand
+        one: Vorstand
         other: TODO
 
       group/bird_life_schweiz_generalsekretariat:
-        one: BirdLife Schweiz Generalsekretariat
+        one: Generalsekretariat
         other: TODO
 
       group/bird_life_schweiz_projektgruppe:
-        one: BirdLife Schweiz Projektgruppe
+        one: Projektgruppe
         other: TODO
 
       group/bird_life_schweiz_interessenten:
-        one: BirdLife Schweiz Interessenten
+        one: Interessenten
         other: TODO
 
       group/kantonalverband:
@@ -33,15 +33,15 @@ de:
         other: TODO
 
       group/kantonalverband_vorstand:
-        one: Kantonalverband Vorstand
+        one: Vorstand
         other: TODO
 
       group/kantonalverband_geschaeftsstelle:
-        one: Kantonalverband Geschäftsstelle
+        one: Geschäftsstelle
         other: TODO
 
       group/kantonalverband_gruppe:
-        one: Kantonalverband Gruppe
+        one: Gruppe
         other: TODO
 
       group/lokale_sektion:
@@ -49,15 +49,15 @@ de:
         other: TODO
 
       group/lokale_sektion_vorstand:
-        one: Lokale Sektion Vorstand
+        one: Vorstand
         other: TODO
 
       group/lokale_sektion_geschaeftsstelle:
-        one: Lokale Sektion Geschäftsstelle
+        one: Geschäftsstelle
         other: TODO
 
       group/lokale_sektion_gruppe:
-        one: Lokale Sektion Gruppe
+        one: Gruppe
         other: TODO
 
 
