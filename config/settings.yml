@@ -7,10 +7,14 @@
 # Settings relevant for the hitobito_birdlife wagon
 # Overrides settings from the main application
 application:
+  name: BirdLife Schweiz/Suisse/Svizzera
   languages:
     de: Deutsch
     fr: Français
     it: Italiano
+  logo:
+    image: logo_birdlife.png
+    height: 100
 
   # non UI languages for assigning to person#language
   # additional_languages:
