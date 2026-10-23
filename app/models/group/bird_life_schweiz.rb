@@ -7,6 +7,7 @@
 
 class Group::BirdLifeSchweiz < ::Group
   self.layer = true
+  self.event_types = [Event, Event::Course]
 
   children(
     BirdLifeSchweizGeschaeftsleitung,
