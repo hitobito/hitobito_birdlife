@@ -30,7 +30,7 @@ de:
 
       group/kantonalverband:
         one: Kantonalverband
-        other: TODO
+        other: Kantonalverbände
 
       group/kantonalverband_vorstand:
         one: Vorstand
@@ -46,7 +46,7 @@ de:
 
       group/lokale_sektion:
         one: Lokale Sektion
-        other: TODO
+        other: Lokale Vereine
 
       group/lokale_sektion_vorstand:
         one: Vorstand
