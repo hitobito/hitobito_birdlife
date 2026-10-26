@@ -60,6 +60,9 @@ de:
         one: Mitglieder
         other: TODO
 
+      group/lokale_sektion_jugendgruppe:
+        one: Jugendgruppe
+        other: TODO
 
       ### ROLES
 
@@ -244,7 +247,11 @@ de:
         description: TODO
 
       group/lokale_sektion_gruppe/mitglied:
-        one: Mitglied
+        one: Einzelmitglied
+        description: TODO
+
+      group/lokale_sektion_gruppe/familienmitglied:
+        one: Familienmitglied
         description: TODO
 
       group/lokale_sektion_gruppe/nicht_mitglied:
@@ -255,3 +262,18 @@ de:
         one: ReadOnly
         description: TODO
 
+      group/lokale_sektion_jugendgruppe/mitglied:
+        one: Einzelmitglied
+        description: TODO
+
+      group/lokale_sektion_jugendgruppe/familienmitglied:
+        one: Familienmitglied
+        description: TODO
+
+      group/lokale_sektion_jugendgruppe/nicht_mitglied:
+        one: NichtMitglied
+        description: TODO
+
+      group/lokale_sektion_jugendgruppe/read_only:
+        one: ReadOnly
+        description: TODO

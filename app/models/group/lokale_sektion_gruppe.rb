@@ -11,6 +11,9 @@ class Group::LokaleSektionGruppe < ::Group
   class Mitglied < ::Role
   end
 
+  class Familienmitglied < ::Role
+  end
+
   class NichtMitglied < ::Role
   end
 
@@ -18,5 +21,5 @@ class Group::LokaleSektionGruppe < ::Group
     self.permissions = [:group_read]
   end
 
-  roles Mitglied, NichtMitglied, ReadOnly
+  roles Mitglied, Familienmitglied, NichtMitglied, ReadOnly
 end

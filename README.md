@@ -68,8 +68,14 @@ of Birdlife.
         * Schreibrechte: [:layer_and_below_full]
         * Geschäftsführung: [:group_and_below_full]
         * Stv. Geschäftsführung: [:group_and_below_full]
-      * Lokale Sektion Gruppe
-        * Mitglied: []
+      * Lokale Sektion Mitglieder
+        * Einzelmitglied: []
+        * Familienmitglied: []
+        * NichtMitglied: []
+        * ReadOnly: [:group_read]
+      * Lokale Sektion Jugendgruppe
+        * Einzelmitglied: []
+        * Familienmitglied: []
         * NichtMitglied: []
         * ReadOnly: [:group_read]
 

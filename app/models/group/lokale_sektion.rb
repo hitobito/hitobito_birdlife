@@ -11,12 +11,14 @@ class Group::LokaleSektion < ::Group
   children(
     LokaleSektionVorstand,
     LokaleSektionGeschaeftsstelle,
-    LokaleSektionGruppe
+    LokaleSektionGruppe,
+    LokaleSektionJugendgruppe
   )
 
   self.default_children = [
     LokaleSektionVorstand,
     LokaleSektionGeschaeftsstelle,
-    LokaleSektionGruppe
+    LokaleSektionGruppe,
+    LokaleSektionJugendgruppe
   ]
 end
