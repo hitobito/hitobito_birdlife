@@ -7,6 +7,7 @@
 
 class Group::LokaleSektion < ::Group
   self.layer = true
+  self.event_types = [Event, Event::Course]
 
   children(
     LokaleSektionVorstand,

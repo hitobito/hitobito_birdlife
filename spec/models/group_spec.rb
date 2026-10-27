@@ -10,7 +10,9 @@ require "spec_helper"
 describe Group do
   include_examples "group types"
 
-  it "lets the Dachverband and Kantonalverbände offer courses" do
-    expect(Group.course_types).to match_array([Group::BirdLifeSchweiz, Group::Kantonalverband])
+  it "lets the Dachverband, Kantonalverbände and Lokale Sektionen offer courses" do
+    expect(Group.course_types).to match_array(
+      [Group::BirdLifeSchweiz, Group::Kantonalverband, Group::LokaleSektion]
+    )
   end
 end
