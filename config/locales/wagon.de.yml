@@ -6,27 +6,27 @@ de:
 
       group/bird_life_schweiz:
         one: BirdLife Schweiz
-        other: TODO
+        other: BirdLife Schweiz
 
       group/bird_life_schweiz_geschaeftsleitung:
         one: Geschäftsleitung
-        other: TODO
+        other: Geschäftsleitungen
 
       group/bird_life_schweiz_vorstand:
         one: Vorstand
-        other: TODO
+        other: Vorstände
 
       group/bird_life_schweiz_generalsekretariat:
         one: Generalsekretariat
-        other: TODO
+        other: Generalsekretariate
 
       group/bird_life_schweiz_projektgruppe:
         one: Projektgruppe
-        other: TODO
+        other: Projektgruppen
 
       group/bird_life_schweiz_interessenten:
         one: Interessenten
-        other: TODO
+        other: Interessenten
 
       group/kantonalverband:
         one: Kantonalverband
@@ -34,35 +34,35 @@ de:
 
       group/kantonalverband_vorstand:
         one: Vorstand
-        other: TODO
+        other: Vorstände
 
       group/kantonalverband_geschaeftsstelle:
         one: Geschäftsstelle
-        other: TODO
+        other: Geschäftsstellen
 
       group/kantonalverband_gruppe:
         one: Mitglieder
-        other: TODO
+        other: Mitgliedergruppen
 
       group/lokale_sektion:
-        one: Lokale Sektion
-        other: Lokale Vereine
+        one: Sektion
+        other: Sektionen
 
       group/lokale_sektion_vorstand:
         one: Vorstand
-        other: TODO
+        other: Vorstände
 
       group/lokale_sektion_geschaeftsstelle:
         one: Geschäftsstelle
-        other: TODO
+        other: Geschäftsstellen
 
       group/lokale_sektion_gruppe:
         one: Mitglieder
-        other: TODO
+        other: Mitgliedergruppen
 
       group/lokale_sektion_jugendgruppe:
         one: Jugendgruppe
-        other: TODO
+        other: Jugendgruppen
 
       ### ROLES
 
